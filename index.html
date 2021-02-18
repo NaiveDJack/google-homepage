@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="./styles/reset.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen"/>
 </head>
 <body>
     <header>
         <div id="about1">
-            <nav class="navigation">
+            <nav class="navigation" margin-left="10px">
                 <button class="button3">About</button>
                 <button class="button3">Store</button>
             </nav>
         </div>
         <div id="signin">
-            <nav class="navigation" justify-content="flex-end">
+            <nav class="navigation">
                 <button class="button3">Gmail</button>
                 <button class="button3">Images</button>
                 <button class="button3"><img src="./images/apps.svg" width="30px" margin="auto"></button>
@@ -20,12 +20,16 @@
             </nav>
         </div>
     </header>
-    <div id=searcharea>
+    <div id=centerpage>
         <div id="logo">
             <img src="./images/googlelogo.png" alt="Google Logo">
         </div>
         <div id="searchbar">
-            <input type="text">
+            <img class="searchicon" src="./images/lens.png">
+            <label for="search">
+                <input id="typearea" type="text">
+            </label>
+            <img class="searchicon" src="./images/mic.png">
         </div>
         <div id="searchbuttons">
             <button type="submit" value="Google Search" class="button2">Google Search</button>

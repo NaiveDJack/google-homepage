@@ -4,11 +4,22 @@ body {
 }
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     position: relative;
     top: 0px;
     width: 100%;
+    font-size: 14pt;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    line-height: 40px;
+    font-size: 10pt;
+    background-color: #f2f2f2;
 }
 #signin {
     position: absolute;
@@ -19,30 +30,48 @@ header {
     left: 0px;
     top: 25px;
 }
-#searcharea {
+#centerpage {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-footer {
-    position: fixed;
-    bottom: 0px;
-    display: flex;
-    width: 100%;
-    line-height: 40px;
-    font-size: 10pt;
-    flex-direction: row;
-    background-color: #f2f2f2;
-}
 #logo {
-    padding: 109px 0px 0px 0px;
+    padding: 109px 0px 20px 0px;
 }
 #searchbar {
-    padding: 8px auto 0 auto;
-
+    display: flex;
+    flex-basis: fill;
+    height: 44px;
+    width: 482px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 8px auto 20px auto;
 }
+#searchbar:hover {
+    box-shadow: 2px 2px 1px #dfe1e5, -1px -1px 1px #dfe1e5;
+}
+label {
+    width: 100%;
+}
+#typearea {
+    border-style: none;
+    height: 90%; /* why does 100% covers the border?*/
+    width: 100%;
+}
+.searchicon {
+    height: 20px;
+    padding: 10px;
+}
+#typearea:active {
+    border-style: none;
+}
+
+#searchbuttons {
+    padding: 8px;
+}
+
 .navigation {
     display: flex;
     min-width: 220px;
@@ -54,6 +83,7 @@ footer {
     color: white;
     border: 1px solid #4285f4;
     margin: 20px;
+    cursor: pointer;
 }
 .button2 {
     color: #5F6368;
